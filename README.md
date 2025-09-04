@@ -5,7 +5,7 @@ Easily share with your guests via a link and personalize with their names!
 
 ## ✨ Features
 - Personalized greeting using URL parameter (`?name=GuestName`)
-- Downloadable invitation (JPG / PDF)
+- Downloadable invitation (JPG)
 - Embedded Google Maps links for event locations
 - Responsive design for mobile & desktop
 - Easy to customize with your own styles and assets
@@ -13,10 +13,10 @@ Easily share with your guests via a link and personalize with their names!
 ## 🚀 How to Use
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/wedding-invitation-template.git
-   cd wedding-invitation-template
+   git clone https://github.com/your-username/november_wedding.git
+   cd november_wedding
 
-Replace the sample MT.jpg and MT.pdf in assets/ with your own files.
+Replace the sample MT.jpg, Couple.jpg with your own files.
 
 Open index.html in a browser or host it online.
 
