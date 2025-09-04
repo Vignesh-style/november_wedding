@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1">
+    <title>  HONOUR INVITE </title>
+    <meta name="the engagement invitation" content="content">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!----------- head----------->
+<section class="thehead">
+    <nav>
+        <button class="but">Be a part of Love Journey <br>
+            adrianne & wilkie
+        </button>
+        <div class= navli>
+            <ul>
+                <li><a href="https://maps.app.goo.gl/6CBELVkbAxBeKVxTA" target="_blank">Engagement Location || </a></li>
+                <li><a href="https://maps.app.goo.gl/18EbC8PemREMRMHZ6" target="_blank">Wedding Location</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="thecenter" id="MT">
+
+        <h1 id="guestName">Welcome !</h1>
+        <a href="MT.jpg" download="Enagement_Invitaion"> Click to View Initiation</a>
+        <p>Hope your doing well, We will be waiting for your presence.<br>
+            Let your wishes makes smiles everywhere </p>
+    </div>
+</section>
+
+<!----------- contact ----------->
+<section>
+    <div class="foot">
+        <h3>MADE WITH LOVE VIGNESH</h3>
+
+    </div>
+
+</section>
+
+<script>
+
+<!--    function add(){-->
+<!--        let person = prompt("Please enter your name");-->
+<!--        if (person != null) {-->
+<!--            document.getElementById("guestName").innerHTML =-->
+<!--            "Hello " + person + "! How are you today?";-->
+<!--        }-->
+<!--    }-->
+
+    function loadInvite(){
+
+          var img = document.createElement("img");
+          img.src = "MT.pdf";
+          img.style.width = "720px";
+          img.style.height = "720px";
+
+          var class_name = "invitation";
+          img.setAttribute("class", class_name);
+
+          document.getElementById('MT').append(img);
+
+    }
+
+
+     window.addEventListener('DOMContentLoaded', (event) => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const guestName = urlParams.get('name');
+            if (guestName) {
+                document.getElementById('guestName').textContent = " Welcome " + guestName + " ! ";
+            } else {
+                document.getElementById('guestName').textContent = " Welcome Dear Trespasser \u2764\uFE0F ! ";
+            }
+        });
+
+
+</script>
+
+
+</body>
+</html>
